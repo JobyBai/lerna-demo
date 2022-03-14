@@ -1,4 +1,4 @@
-const { build } = require('@cckj/mf-webpack-base').default
+const { build } = require('joby-webpack-base').default
 const fs = require('fs')
 
 /**

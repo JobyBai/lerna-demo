@@ -1,0 +1,58 @@
+{
+  "name": "joby-webpack-base",
+  "version": "0.0.1",
+  "description": "create a base webpack config",
+  "author": "郑温剑 <904656778@qq.com>",
+  "license": "ISC",
+  "main": "./dist/lib/webpack-base.js",
+  "bin": {
+    "cjbuild": "./dist/bin/index.js"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.0",
+    "@types/express": "^4.17.13",
+    "@types/react": "16.x",
+    "@types/react-dom": "16.x",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-middleware": "^5.0.2",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@cckj/mf-types": "^0.8.3",
+    "autoprefixer": "^10.3.1",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
+    "postcss-loader": "^6.1.1",
+    "style-loader": "^3.2.1",
+    "ts-loader": "^9.2.5",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "maintainers": [
+    "cj"
+  ],
+  "gitHead": "278bf10f16e37139af986eea576d45b2d1452217",
+  "dependencies": {
+    "isomorphic-style-loader": "^5.3.2",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "tslib": "^2.3.1",
+    "webpack-bundle-analyzer": "^4.5.0"
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "react": "16.x",
+    "react-dom": "16.x"
+  }
+}

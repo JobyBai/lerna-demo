@@ -1,0 +1,25 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "0.8.15",
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "*.md",
+        ".npmrc"
+      ],
+      "conventionalCommits": false,
+      "message": "chore(root): publish",
+      "push": false
+    },
+    "version": {
+      "push": true,
+      "conventionalCommits": true,
+      "allowBranch": "master",
+      "message": "chore(root): publish"
+    }
+  }
+}

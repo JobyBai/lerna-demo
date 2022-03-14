@@ -1,0 +1,44 @@
+{
+  "name": "joby-ui",
+  "version": "0.0.1",
+  "private": false,
+  "description": "mycj menu components",
+  "author": "小K <904656778@qq.com>",
+  "license": "ISC",
+  "main": "dist/app.js",
+  "files": [
+    "dist",
+    "cjs"
+  ],
+  "scripts": {
+    "dev": "concurrently -c=blue,yellow -n=\"client\",server -p=[{name}} \"npm run client:dev\" \"npm run server:dev\"",
+    "build": "npm run client:build && npm run server:build",
+    "client:dev": "cross-env NODE_ENV=development cjbuild",
+    "server:dev": "cross-env SSR=1 NODE_ENV=development cjbuild",
+    "client:build": "cross-env NODE_ENV=production cjbuild",
+    "server:build": "cross-env SSR=1 NODE_ENV=production cjbuild",
+    "i18n-push:test": "i18n-util --type push --env test",
+    "i18n-push:production": "i18n-util --type push --env production",
+    "i18n-pull:test": "i18n-util --type pull --env test",
+    "i18n-pull:production": "i18n-util --type pull --env production",
+    "i18n-generate": "i18n-util --type generateDevLang --inputPath src/lang/local"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "maintainers": [
+    "cj"
+  ],
+  "gitHead": "14b2c2a4cadb9953abed009ce475ab5f6e624ec3",
+  "devDependencies": {
+    "joby-webpack-base": "^0.0.1"
+  },
+  "dependencies": {
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
+  },
+  "peerDependencies": {
+    "react": "16.x",
+    "react-dom": "16.x"
+  }
+}

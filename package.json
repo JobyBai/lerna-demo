@@ -14,6 +14,7 @@
     "release": "lerna publish from-package --yes",
     "release:minor": "lerna publish minor --yes",
     "release:majoy": "lerna publish majoy --yes",
-    "release:version": "git pull && lerna version patch --yes"
+    "release:version": "git pull && lerna version patch --yes",
+    "build": "lerna run --stream --sort build"
   }
 }
